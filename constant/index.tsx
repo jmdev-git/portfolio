@@ -131,7 +131,7 @@ export const projects: FeaturedProjects[] = [
     desc: "I built Portfolio to have a space where I can share the things I’ve created and how I’ve grown as a developer. I wanted it to feel simple, clean, and personal something that truly reflects who I am and what I love doing. Every project here tells a part of my story, from the ideas I’ve explored to the skills I’ve learned along the way. Portfolio isn’t just a showcase it’s a reminder of how far I’ve come and how much more I want to build.",
     tools: ["Nextjs", "ShadCn Ui", "Tailwind CSS", "Framer Motion"],
     link: "https://jmdev-portfolio.vercel.app/",
-    repo: "https://github.com/jmdev-git/Documate",
+    repo: "https://github.com/jmdev-git/portfolio",
   },
 ];
 
