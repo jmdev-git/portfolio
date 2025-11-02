@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { Highlighter } from "@/components/ui/highlighter";
 import { useTheme } from "next-themes";
 import { Magnetic } from "@/components/motion-primitives/magnetic";
+import Link from "next/link";
 
 const HeroSection = () => {
   const { theme } = useTheme();
@@ -79,9 +80,10 @@ const HeroSection = () => {
                 actionArea="global"
                 range={200}
               >
+              <Link href={"#about"}>
                 <Button className="mt-4 w-full text-white md:w-auto cursor-pointer shadow-sm bg-color">
                   Learn more <ArrowRight />
-                </Button>
+                </Button></Link>
               </Magnetic>
             </div>
           </div>

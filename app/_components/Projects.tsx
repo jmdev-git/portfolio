@@ -13,6 +13,7 @@ import {
   MorphingDialogImage,
   MorphingDialogTrigger,
 } from "@/components/motion-primitives/morphing-dialog";
+import { TextShimmer } from "@/components/motion-primitives/text-shimmer";
 import { Button } from "@/components/ui/button";
 import { projects } from "@/constant";
 import { PinIcon, XIcon } from "lucide-react";
@@ -138,7 +139,11 @@ const ProjectSection = () => {
                         </Button>
                       </Magnetic>
                     </Link>
-                    <Link href={project.repo} target="_blank" className="w-full">
+                    <Link
+                      href={project.repo}
+                      target="_blank"
+                      className="w-full"
+                    >
                       {" "}
                       <Button
                         size="sm"
@@ -154,9 +159,7 @@ const ProjectSection = () => {
             ))}
           </div>
         </div>
-        <h2 className="md:text-4xl text-3xl max-w-3/4 mx-auto font-bold mt-10 tracking-tight text-center text-color">
-          More Projects Coming Soon
-        </h2>
+       <TextShimmer duration={4} className="custom-font md:text-3xl text-2xl font-bold mt-10 tracking-tight text-center" >More Projects Coming Soon</TextShimmer>
       </div>
     </section>
   );
