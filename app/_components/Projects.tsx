@@ -159,7 +159,14 @@ const ProjectSection = () => {
             ))}
           </div>
         </div>
-       <TextShimmer duration={4} className="custom-font md:text-3xl text-2xl font-bold mt-10 tracking-tight text-center" >More Projects Coming Soon</TextShimmer>
+        <div className="text-center mt-10">
+          <TextShimmer
+            duration={4}
+            className="custom-font md:text-3xl text-2xl font-bold tracking-tight"
+          >
+            More Projects Coming Soon
+          </TextShimmer>
+        </div>
       </div>
     </section>
   );
