@@ -42,7 +42,7 @@ const ContactSection = () => {
   return (
     <section
       id="contacts"
-      className="lg:py-14 pt-8 pb-4 bg-linear-to-b from-[#fff2ed] to-white dark:from-gray-950 dark:to-gray-900"
+      className="lg:py-14 pt-8 bg-linear-to-b from-[#fff2ed] to-white dark:from-gray-950 dark:to-gray-900"
     >
       <div className="container">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-6">

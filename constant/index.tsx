@@ -97,7 +97,7 @@ export const links: NavLink[] = [
 export const expertise: WhatIDo[] = [
   {
     title: "Web Development",
-    desc: "I build modern, responsive websites using Next.js, ShadCN UI and Tailwind CSS.",
+    desc: "I create modern, responsive, and user-friendly websites that bring ideas to life.",
     icon: <FaLaptopCode size={20} />,
   },
   {
@@ -129,7 +129,13 @@ export const projects: FeaturedProjects[] = [
     imgLight: "/Project2LightMode.PNG",
     title: "Portfolio",
     desc: "I built Portfolio to have a space where I can share the things I’ve created and how I’ve grown as a developer. I wanted it to feel simple, clean, and personal something that truly reflects who I am and what I love doing. Every project here tells a part of my story, from the ideas I’ve explored to the skills I’ve learned along the way. Portfolio isn’t just a showcase it’s a reminder of how far I’ve come and how much more I want to build.",
-    tools: ["Nextjs", "ShadCn Ui", "Tailwind CSS", "Framer Motion"],
+    tools: [
+      "Nextjs",
+      "ShadCn Ui",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Typescript",
+    ],
     link: "https://jmd-portfolio.vercel.app/",
     repo: "https://github.com/jmdev-git/portfolio",
   },

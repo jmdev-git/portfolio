@@ -1,4 +1,9 @@
 import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { links } from "@/constant";
 import Link from "next/link";
 import React from "react";
@@ -11,7 +16,7 @@ const Header = () => {
       <nav className="lg:px-8 px-4 py-3 flex justify-between items-center">
         <h2 className="text-2xl font-black tracking-tight">
           JM
-          <span className="text-color">Dev</span>
+          <span className="text-color">Dev.</span>
         </h2>
         <div className="flex items-center">
           <ul className="lg:flex hidden gap-6 border-r pr-6 transition-all duration-300 ease-in-out">
@@ -24,12 +29,26 @@ const Header = () => {
             ))}
           </ul>
           <div className="ml-6 flex gap-6 items-center">
-            <AnimatedThemeToggler className="hover:rotate-45 duration-300 transition" />
+           <AnimatedThemeToggler className="hover:rotate-45 duration-300 transition" />
             <Link href={"https://github.com/jmdev-git"} target="_blank">
-              <TbBrandGithub size={20} />
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <TbBrandGithub size={20} />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Github</p>
+                </TooltipContent>
+              </Tooltip>
             </Link>
             <Link href={"https://www.tiktok.com/@jmdiv10"} target="_blank">
-              <PiTiktokLogo size={20} />
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <PiTiktokLogo size={20} />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>TikTok</p>
+                </TooltipContent>
+              </Tooltip>
             </Link>
           </div>
         </div>

@@ -30,7 +30,7 @@ const ProjectSection = () => {
   return (
     <section
       id="projects"
-      className="overflow-hidden bg-linear-to-t from-white to-[#fff2ed] dark:from-gray-900 dark:to-gray-950 lg:pt-14 py-8"
+      className="overflow-hidden bg-linear-to-t from-white to-[#fff2ed] dark:from-gray-900 dark:to-gray-950 lg:py-14 py-8"
     >
       <div className="container">
         <h2 className="heading custom-font text-center">
@@ -41,8 +41,11 @@ const ProjectSection = () => {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="w-full rounded-lg shadow-sm flex flex-col md:flex-row relative overflow-hidden bg-white dark:bg-gray-800 dark:border dark:border-gray-200/30 hover:shadow-xl transition-all duration-300"
+                className="w-full rounded-lg shadow-sm flex flex-col md:flex-row relative overflow-hidden bg-white dark:bg-gray-800 hover:shadow-xl transition-all duration-300"
               >
+                <div className="absolute md:block hidden size-28 -right-16 -top-20 rounded-full blur-2xl opacity-80 bg-[#ffbfa8] dark:bg-gray-500 z-0" />
+                  <div className="absolute md:block hidden h-20 w-60 -right-16 -bottom-20 rounded-full blur-2xl opacity-80 bg-[#ffbfa8] dark:bg-gray-500 z-0" />
+                <div className="absolute h-[7px] left-0 -bottom-1 w-full md:rounded-r-lg rounded-b-lg bg-[#ffbfa8] dark:bg-gray-200/20 z-0" />
                 <MorphingDialog
                   transition={{
                     duration: 0.3,
@@ -51,7 +54,7 @@ const ProjectSection = () => {
                 >
                   <MorphingDialogTrigger>
                     <ImageComparison
-                      className="aspect-16/10 rounded-r-none h-60 w-full"
+                      className="aspect-16/10 rounded-r-none h-60 w-full md:border-r"
                       enableHover
                       springOptions={{
                         bounce: 0.3,
@@ -118,7 +121,7 @@ const ProjectSection = () => {
                       ))}
                     </div>
                   </div>
-                  <div className="flex flex-col-reverse md:flex-row items-center gap-2">
+                  <div className="flex flex-col-reverse md:flex-row items-center gap-2 relative z-10">
                     <Link
                       href={project.link}
                       target="_blank"
@@ -150,7 +153,7 @@ const ProjectSection = () => {
                         variant={"ghost"}
                         className="cursor-pointer dark:bg-gray-200/20 md:bg-transparent bg-[#ffe1d4] text-[#ef1707] dark:text-white md:w-auto w-full rounded-sm hover:text-[#ef1707] hover:bg-[#ffe1d4] dark:hover:bg-gray-200/20 transition-colors"
                       >
-                        <TbBrandGithub size={20} /> Github
+                        <TbBrandGithub size={20} /> Source Code
                       </Button>
                     </Link>
                   </div>

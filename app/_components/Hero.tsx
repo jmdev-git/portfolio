@@ -66,7 +66,7 @@ const HeroSection = () => {
               <h2 className="custom-font lg:text-[3.8rem] md:text-5xl text-4xl lg:leading-18 md:leading-16 leading-12 capitalize font-bold">
                 turning vision into reality with{" "}
                 <span className="text-color">code</span> and{" "}
-                <span className="text-color">design</span>.
+                <span className="text-color">design.</span>
               </h2>
               <p className="text-muted-foreground line-clamp-2">
                 I love bringing ideas to life through code and meaningful
